@@ -1,4 +1,4 @@
-import { Column, H5, Input, Row } from "@components";
+import { Column, H3, Input, Row } from "@components";
 import { joinCls } from "@utilities";
 import { forwardRef } from "react";
 
@@ -7,13 +7,13 @@ export const Footer = forwardRef<HTMLDivElement, SkeletonProps>(({ className, ch
 		<Row ref={ref} className={joinCls("justify-between items-end py-16 border-t border-light-gray", className)} {...props}>
 			<Column>
 				<Row className="gap-10">
-					<H5 className="text-dark-gray">CONTACT</H5>
-					<H5 className="text-dark-gray">TERMS OF SERVICES</H5>
-					<H5 className="text-dark-gray">SHIPPING AND RETURNS</H5>
+					<H3 className="text-dark-gray">CONTACT</H3>
+					<H3 className="text-dark-gray">TERMS OF SERVICES</H3>
+					<H3 className="text-dark-gray">SHIPPING AND RETURNS</H3>
 				</Row>
-				<H5 className="mt-12">
+				<H3 className="mt-12">
 					© 2021 Shelly. <span className="text-dark-gray">Terms of use</span> and <span className="text-dark-gray">privacy policy</span>.
-				</H5>
+				</H3>
 			</Column>
 			<Column className="items-end">
 				<Input placeholder="Give an email, get the newsletter" icon={<i className="ri-mail-line" />} className="!w-96" />

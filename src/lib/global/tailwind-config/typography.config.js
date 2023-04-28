@@ -2,8 +2,8 @@ import defaultTheme from "tailwindcss/defaultTheme";
 
 // System design fonts
 const systemFontFamily = {
-	heading: ["Raleway"],
-	body: ["Comfortaa"],
+	heading: ["Nunito"],
+	body: ["Nunito"],
 };
 
 // Font using in compiled css

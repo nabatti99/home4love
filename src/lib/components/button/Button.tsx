@@ -1,19 +1,19 @@
 import { joinCls } from "@utilities/text.utils";
 import { MouseEvent, forwardRef } from "react";
-import { H5, Row } from "@components";
+import { H3, Row } from "@components";
 
 const buttonClass: Record<ButtonVariant, string> = {
 	fill: `
-    border-2 border-transparent 
-    bg-black text-white fill-white 
-    hover:bg-white hover:text-black hover:fill-black hover:border-black 
-    active:bg-white active:text-black active:fill-black
+    rounded-xl border-2 border-transparent 
+    bg-accent text-white fill-white 
+    hover:bg-accent/80 hover:border-accent 
+    active:bg-accent/90
   `,
 	outline: `
-    border-2 
-    bg-transparent text-black fill-black border-black 
-    hover:bg-black hover:text-white hover:fill-white hover:border-white 
-    active:bg-black active:text-white active:fill-white active:border-white
+    rounded-xl border-2 
+    bg-transparent text-accent fill-accent border-accent 
+    hover:bg-light-accent/20 
+    active:bg-light-accent/40
   `,
 };
 
@@ -35,7 +35,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 			>
 				<Row className="button-layout items-center justify-center gap-2">
 					{LeftItem && <LeftItem className="w-6 h-6" />}
-					<H5 className="button-text transition-colors duration-0">{children}</H5>
+					<H3 className="button-text transition-colors duration-0">{children}</H3>
 					{RightItem && <RightItem className="w-6 h-6" />}
 				</Row>
 			</button>

@@ -1,4 +1,4 @@
-import { H5, Row, Text } from "@components";
+import { H3, Row, Text } from "@components";
 import { joinCls } from "@utilities";
 import { forwardRef } from "react";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ export const Table = forwardRef<HTMLTableElement, TableProps>(({ dataSource, col
 					{columns.map(({ key, title, renderHeader }, index) => {
 						return (
 							<th key={key} className="border-b border-black pl-0 pt-0 pr-4 pb-4">
-								{renderHeader ? renderHeader(title, index) : <H5>{title}</H5>}
+								{renderHeader ? renderHeader(title, index) : <H3>{title}</H3>}
 							</th>
 						);
 					})}

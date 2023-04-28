@@ -1,4 +1,4 @@
-import { H5, Row, Text } from "@components";
+import { H3, Row, Text } from "@components";
 import { joinCls } from "@utilities";
 import { forwardRef } from "react";
 
@@ -9,7 +9,7 @@ export const Alert = forwardRef<HTMLDivElement, AlertProps>(({ className, ...pro
 				<Row className="justify-between items-center">
 					<Row className="gap-4 items-center">
 						<i className="ri-checkbox-circle-fill text-lg text-accent" />
-						<H5 className="text-black">The item added to your Shopping bag.</H5>
+						<H3 className="text-black">The item added to your Shopping bag.</H3>
 					</Row>
 
 					<Text className="font-body text-accent cursor-pointer">VIEW CART</Text>

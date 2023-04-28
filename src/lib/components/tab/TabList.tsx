@@ -5,7 +5,7 @@ import { forwardRef } from "react";
 
 export const TabList = forwardRef<HTMLDivElement, TabListProps>(({ className, children, ...props }, ref) => {
 	return (
-		<Tab.List ref={ref} as={Row} className={joinCls("border-b border-light-gray gap-28", className)} {...props}>
+		<Tab.List ref={ref} as={Row} className={joinCls("gap-10", className)} {...props}>
 			{children}
 		</Tab.List>
 	);

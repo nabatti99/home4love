@@ -9,7 +9,7 @@ export const TabItem = forwardRef<HTMLDivElement, TabItemProps>(({ className, ch
 			ref={ref}
 			as={H3}
 			className={({ selected }) =>
-				joinCls("py-8 border-b border-transparent text-dark-gray hover:text-black duration-300 cursor-pointer", className, selected && "!text-black !border-black")
+				joinCls("p-2 border-b-2 border-transparent text-dark-gray hover:text-black duration-300 cursor-pointer", className, selected && "!text-black !border-black")
 			}
 			{...props}
 		>

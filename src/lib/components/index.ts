@@ -11,3 +11,5 @@ export * from "./form";
 export * from "./alert";
 export * from "./tab";
 export * from "./table";
+export * from "./tag";
+export * from "./progress";

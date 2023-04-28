@@ -4,9 +4,11 @@ const colors = {
 	black: "#000000",
 	white: "#FFFFFF",
 
-	accent: "#A18A68",
-	"in-gray": "#D8D8D8",
-	"dark-gray": "#707070",
+	accent: "#6CC3EA",
+	"light-accent": "#B0E0FB",
+	dark: "#404040",
+	"in-gray": "#525252",
+	"dark-gray": "#737373",
 	"light-gray": "#EFEFEF",
 
 	"white-alpha": {
