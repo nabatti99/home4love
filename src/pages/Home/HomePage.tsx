@@ -1,4 +1,4 @@
-import { Button, Column, Footer, Grid, H1, H2, Image, Row, TabGroup, TabItem, TabList, TabPanel, TabPanels, Text, Small } from "@components";
+import { Button, Column, Footer, Grid, H1, H2, Image, Row, TabGroup, TabItem, TabList, TabPanel, TabPanels, Text, Small, Disclosure } from "@components";
 import { randomImgUrl } from "@utilities";
 import { CardItem } from "./components";
 import bannerJpg from "./images/banner.jpg";
@@ -14,7 +14,7 @@ export const HomePage = ({}: HomePageProps) => {
 		<div className="">
 			<section className="bg-gray-100">
 				<div className="container mx-auto">
-					<img src={bannerJpg} className="w-full" />
+					<Image src={bannerJpg} className="w-full" />
 				</div>
 			</section>
 
@@ -204,45 +204,24 @@ export const HomePage = ({}: HomePageProps) => {
 			<div className="h-[1px] bg-light-gray" />
 
 			<section className="container mx-auto py-20">
-				<Column>
-					<H1 className="text-accent">
-						Khi thiện nguyện
-						<br />
-						là nguồn hạnh phúc
-					</H1>
+				<Row className="gap-20">
+					<H1 className="text-accent shrink-0">Câu hỏi thường gặp</H1>
 
-					{/* <div className="w-full px-4 pt-16">
-						<div className="mx-auto w-full max-w-md rounded-2xl bg-white p-2">
-							<Disclosure>
-								{({ open }) => (
-									<>
-										<Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-											<span>What is your refund policy?</span>
-											<ChevronUpIcon className={`${open ? "rotate-180 transform" : ""} h-5 w-5 text-purple-500`} />
-										</Disclosure.Button>
-										<Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-											If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.
-										</Disclosure.Panel>
-									</>
-								)}
-							</Disclosure>
-							<Disclosure as="div" className="mt-2">
-								{({ open }) => (
-									<>
-										<Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-											<span>Do you offer technical support?</span>
-											<ChevronUpIcon className={`${open ? "rotate-180 transform" : ""} h-5 w-5 text-purple-500`} />
-										</Disclosure.Button>
-										<Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">No.</Disclosure.Panel>
-									</>
-								)}
-							</Disclosure>
-						</div>
-					</div> */}
-				</Column>
+					<Column className="grow items-stretch gap-4">
+						<Disclosure title="Quy đổi thành tiền như thế nào">
+							<Text>Quy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nào</Text>
+						</Disclosure>
+						<Disclosure title="Quy đổi thành tiền như thế nào">
+							<Text>Quy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nào</Text>
+						</Disclosure>
+						<Disclosure title="Quy đổi thành tiền như thế nào">
+							<Text>Quy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nàoQuy đổi thành tiền như thế nào</Text>
+						</Disclosure>
+					</Column>
+				</Row>
 			</section>
 
-			<Footer className="container mx-auto mt-52" />
+			<Footer className="container mx-auto mt-20" />
 		</div>
 	);
 };
